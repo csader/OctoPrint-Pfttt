@@ -20,7 +20,7 @@ class PftttPlugin(octoprint.plugin.SettingsPlugin,
 		if key is None or key == '':
 			return
 		event_body = { 'value1' : payload }
-		r = requests.post("https://maker.ifttt.com/trigger/3dprintdone/with/key/{key}".format(
+		r = requests.post("https://maker.ifttt.com/trigger/{event}/with/key/{key}".format(
 			event=event_name, key=key), data=event_body)
 		self._logger.info("IFTTT request returned %s" % r.text)
 
