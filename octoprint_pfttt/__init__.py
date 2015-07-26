@@ -10,7 +10,7 @@ class PftttPlugin(octoprint.plugin.SettingsPlugin,
 		octoprint.plugin.EventHandlerPlugin):
 
 	def get_settings_defaults(self):
-		return dict(maker_channel_key="bAgTPQUusmU1b4w0Zy9vf-")
+		return dict(maker_channel_key="dC4jRbLE69m7OEHxApwWup")
 
 	def get_template_configs(self):
 		return [dict(type="settings", custom_bindings=False)]
